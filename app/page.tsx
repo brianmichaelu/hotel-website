@@ -15,7 +15,7 @@ export default function Home() {
     },
     {
       name: "Deluxe Room",
-      image: "/room-deluxe.jpg", // Replace image in public folder
+      image: "/deluxe.png", // Replace image in public folder
       price: "TZS 110,000 / night", // Replace with real Deluxe Room price
       description: "More space and comfort for business guests and couples.",
       amenities: ["King bed", "Work desk", "Breakfast option", "Smart TV"],
