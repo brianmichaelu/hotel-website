@@ -8,7 +8,7 @@ export default function Home() {
   const rooms = [
     {
       name: "Standard Room",
-      image: "/room-standard.jpg", // Replace image in public folder
+      image: "/standard.png", // Replace image in public folder
       price: "TZS 75,000 / night", // Replace with real Standard Room price
       description: "A clean and comfortable room for solo travelers and short stays.",
       amenities: ["Queen bed", "Air conditioning", "Free Wi-Fi", "Private bathroom"],
