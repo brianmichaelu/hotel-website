@@ -63,19 +63,17 @@ export default function Home() {
     </a>
 
     <nav className="hidden items-center gap-7 text-sm font-medium text-slate-700 md:flex">
-      <a href="#about" className="hover:text-[#B8892D]">About</a>
-      <a href="#rooms" className="hover:text-[#B8892D]">Rooms</a>
-      <a href="#amenities" className="hover:text-[#B8892D]">Amenities</a>
-      <a href="#contact" className="hover:text-[#B8892D]">Contact</a>
-    </nav>
-
-    <div className="flex items-center gap-3">
+      <a onClick={() => setMobileMenuOpen(false)} href="#about">About</a>
+      <a onClick={() => setMobileMenuOpen(false)} href="#rooms">Rooms</a>
+      <a onClick={() => setMobileMenuOpen(false)} href="#amenities">Amenities</a>
+      <a onClick={() => setMobileMenuOpen(false)} href="#contact">Contact</a>
       <a
+        onClick={() => setMobileMenuOpen(false)}
         href={whatsappLink}
-        className="hidden rounded-full bg-[#B8892D] px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-[#9f7626] sm:inline-flex"
+        className="rounded-full bg-[#B8892D] px-5 py-3 text-center font-bold text-white"
       >
-        Book Now
-      </a>
+        Book via WhatsApp
+    </a>
 
       <button
         type="button"
