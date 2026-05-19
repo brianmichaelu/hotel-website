@@ -349,7 +349,7 @@ export default function Home() {
                 <option>Family Room</option>
               </select>
               <textarea className="min-h-32 rounded-2xl border border-slate-200 px-4 py-3 outline-none focus:border-[#B8892D]" placeholder="Message" />
-              <button type="button" className="cursor-pointer rounded-full bg-[#0B1F3A] px-6 py-3 font-bold text-white transition hover:bg-[#132f55]">
+              <button type="submit" className="cursor-pointer rounded-full bg-[#0B1F3A] px-6 py-3 font-bold text-white transition hover:bg-[#132f55]">
                 Send Booking Request
               </button>
             </div>
