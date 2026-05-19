@@ -111,7 +111,7 @@ export default function Home() {
     className="h-[360px] w-full object-cover md:h-[520px]"
   />
 </div>
-          />
+        
           </div>
         </div>
       </section>
