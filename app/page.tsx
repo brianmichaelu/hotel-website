@@ -324,7 +324,7 @@ export default function Home() {
     allowFullScreen
     loading="lazy"
     referrerPolicy="no-referrer-when-downgrade"
-    className="h-full w-full"rounded-2xl"
+    className="h-full w-full rounded-2xl"
   />
 </div>
           </div>
