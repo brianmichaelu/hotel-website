@@ -182,12 +182,13 @@ export default function Home() {
           <div className="grid gap-6 md:grid-cols-3">
             {rooms.map((room) => (
               <article key={room.name} className="overflow-hidden rounded-3xl bg-white shadow-xl ring-1 ring-black/5 transition duration-300 hover:-translate-y-2 hover:shadow-2xl"
-                 <Image
+                 Image
                     src={room.image}
                     alt={room.name}
                     width={800}
                     height={600}
                   className="h-56 w-full object-cover"
+              
                 />
                 <div className="p-6">
                   <div className="flex items-start justify-between gap-4">
