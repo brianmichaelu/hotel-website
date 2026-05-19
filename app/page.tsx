@@ -22,7 +22,7 @@ export default function Home() {
     },
     {
       name: "Family Room",
-      image: "/room-family.jpg", // Replace image in public folder
+      image: "/family.png", // Replace image in public folder
       price: "TZS 160,000 / night", // Replace with real Family Room price
       description: "A spacious room designed for families and group visitors.",
       amenities: ["Multiple beds", "Extra space", "Secure parking", "Room service"],
