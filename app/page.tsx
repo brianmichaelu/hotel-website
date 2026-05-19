@@ -56,24 +56,26 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-[#FAF7F0] text-[#0B1F3A]">
       {/* HEADER */}
-      <header className="sticky top-0 z-50 border-b border-black/5 bg-white/90 backdrop-blur">
+<header className="sticky top-0 z-50 border-b border-black/5 bg-white/90 backdrop-blur">
   <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4">
     <a href="#home" className="text-lg font-bold tracking-wide text-[#0B1F3A]">
       {hotelName}
     </a>
 
     <nav className="hidden items-center gap-7 text-sm font-medium text-slate-700 md:flex">
-      <a onClick={() => setMobileMenuOpen(false)} href="#about">About</a>
-      <a onClick={() => setMobileMenuOpen(false)} href="#rooms">Rooms</a>
-      <a onClick={() => setMobileMenuOpen(false)} href="#amenities">Amenities</a>
-      <a onClick={() => setMobileMenuOpen(false)} href="#contact">Contact</a>
+      <a href="#about" className="hover:text-[#B8892D]">About</a>
+      <a href="#rooms" className="hover:text-[#B8892D]">Rooms</a>
+      <a href="#amenities" className="hover:text-[#B8892D]">Amenities</a>
+      <a href="#contact" className="hover:text-[#B8892D]">Contact</a>
+    </nav>
+
+    <div className="flex items-center gap-3">
       <a
-        onClick={() => setMobileMenuOpen(false)}
         href={whatsappLink}
-        className="rounded-full bg-[#B8892D] px-5 py-3 text-center font-bold text-white"
+        className="hidden rounded-full bg-[#B8892D] px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-[#9f7626] sm:inline-flex"
       >
-        Book via WhatsApp
-    </a>
+        Book Now
+      </a>
 
       <button
         type="button"
@@ -89,11 +91,12 @@ export default function Home() {
   {mobileMenuOpen && (
     <div className="border-t border-slate-100 bg-white px-5 py-4 md:hidden">
       <div className="flex flex-col gap-4 text-sm font-medium text-slate-700">
-        <a href="#about">About</a>
-        <a href="#rooms">Rooms</a>
-        <a href="#amenities">Amenities</a>
-        <a href="#contact">Contact</a>
+        <a onClick={() => setMobileMenuOpen(false)} href="#about">About</a>
+        <a onClick={() => setMobileMenuOpen(false)} href="#rooms">Rooms</a>
+        <a onClick={() => setMobileMenuOpen(false)} href="#amenities">Amenities</a>
+        <a onClick={() => setMobileMenuOpen(false)} href="#contact">Contact</a>
         <a
+          onClick={() => setMobileMenuOpen(false)}
           href={whatsappLink}
           className="rounded-full bg-[#B8892D] px-5 py-3 text-center font-bold text-white"
         >
