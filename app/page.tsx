@@ -1,29 +1,29 @@
 export default function Home() {
   // ===== REPLACE THESE CLIENT DETAILS =====
-  const hotelName = "Tegeta Palm Hotel";
-  const phoneNumber = "+255 700 000 000"; // Replace with real phone number
-  const email = "bookings@tegetapalmhotel.co.tz"; // Replace with real email
-  const whatsappLink = "https://wa.me/255700000000"; // Replace with real WhatsApp number
+  const hotelName = "Tegeta Palm Hotel"; // Replace with real hotel name if needed
+  const phoneNumber = "+255 689 824 682"; // Replace with real hotel phone number
+  const email = "lubrun.enterprises@gmail.com"; // Replace with real hotel email
+  const whatsappLink = "https://wa.me/255689824682"; // Replace with real WhatsApp number, no + sign or spaces
 
   const rooms = [
     {
       name: "Standard Room",
       image: "/room-standard.jpg", // Replace image in public folder
-      price: "TZS 80,000 / night", // Replace price
+      price: "TZS 75,000 / night", // Replace with real Standard Room price
       description: "A clean and comfortable room for solo travelers and short stays.",
       amenities: ["Queen bed", "Air conditioning", "Free Wi-Fi", "Private bathroom"],
     },
     {
       name: "Deluxe Room",
       image: "/room-deluxe.jpg", // Replace image in public folder
-      price: "TZS 120,000 / night", // Replace price
+      price: "TZS 110,000 / night", // Replace with real Deluxe Room price
       description: "More space and comfort for business guests and couples.",
       amenities: ["King bed", "Work desk", "Breakfast option", "Smart TV"],
     },
     {
       name: "Family Room",
       image: "/room-family.jpg", // Replace image in public folder
-      price: "TZS 180,000 / night", // Replace price
+      price: "TZS 160,000 / night", // Replace with real Family Room price
       description: "A spacious room designed for families and group visitors.",
       amenities: ["Multiple beds", "Extra space", "Secure parking", "Room service"],
     },
@@ -81,8 +81,8 @@ export default function Home() {
               Comfortable Stays in Tegeta, Dar es Salaam
             </h1>
             <p className="mt-5 max-w-xl text-base leading-8 text-slate-600 md:text-lg">
-              Affordable comfort, clean rooms, and calm surroundings with easy access to the city,
-              beach areas, Mbezi Beach, and central Dar es Salaam.
+              Clean rooms, calm surroundings, and friendly local service with easy access to Mbezi Beach,
+              Bagamoyo Road, White Sands, and central Dar es Salaam.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <a
@@ -248,7 +248,7 @@ export default function Home() {
             <p className="text-sm font-bold uppercase tracking-[0.25em] text-[#B8892D]">Contact & booking</p>
             <h2 className="mt-3 text-3xl font-bold md:text-4xl">Book your stay in Tegeta today.</h2>
             <p className="mt-4 leading-8 text-slate-600">
-              Contact us directly for room availability, prices, group bookings, airport transfer,
+              Contact us directly for room availability, weekend stays, group bookings, airport transfer,
               and meeting space inquiries.
             </p>
 
