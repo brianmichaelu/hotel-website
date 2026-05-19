@@ -108,7 +108,7 @@ export default function Home() {
 
     <div className="overflow-hidden rounded-[2rem] bg-[#FAF7F0] shadow-2xl">
       <Image
-        src="/hotel-hero.jpg"
+        src="/exterior.jpg"
         alt="Tegeta Palm Hotel exterior"
         width={1200}
         height={800}
