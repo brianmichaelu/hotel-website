@@ -1,3 +1,4 @@
+  import Image from "next/image";
 export default function Home() {
   // ===== REPLACE THESE CLIENT DETAILS =====
   const hotelName = "Tegeta Palm Hotel"; // Replace with real hotel name if needed
@@ -100,13 +101,13 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="overflow-hidden rounded-[2rem] bg-[#FAF7F0] shadow-2xl">
-            {/* Replace /exterior.png with actual hotel hero image */}
-            <img
-              src="/exterior.png"
+          <Image
+              src="/hotel-hero.jpg"
               alt="Tegeta Palm Hotel exterior"
+              width={1200}
+              height={800}
               className="h-[360px] w-full object-cover md:h-[520px]"
-            />
+          />
           </div>
         </div>
       </section>
@@ -140,7 +141,13 @@ export default function Home() {
           <div className="grid gap-6 md:grid-cols-3">
             {rooms.map((room) => (
               <article key={room.name} className="overflow-hidden rounded-3xl bg-white shadow-xl ring-1 ring-black/5">
-                <img src={room.image} alt={room.name} className="h-56 w-full object-cover" />
+                 <Image
+                    src={room.image}
+                    alt={room.name}
+                    width={800}
+                    height={600}
+                  className="h-56 w-full object-cover"
+                />
                 <div className="p-6">
                   <div className="flex items-start justify-between gap-4">
                     <h3 className="text-xl font-bold">{room.name}</h3>
@@ -164,6 +171,7 @@ export default function Home() {
                 </div>
               </article>
             ))}
+             
           </div>
         </div>
       </section>
@@ -196,7 +204,13 @@ export default function Home() {
           <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {galleryImages.map((image) => (
               <div key={image.title} className="group overflow-hidden rounded-3xl bg-[#FAF7F0] shadow-lg">
-                <img src={image.src} alt={image.title} className="h-64 w-full object-cover transition duration-500 group-hover:scale-105" />
+                 <Image
+                    src={image.src}
+                    alt={image.title}
+                    width={800}
+                    height={600}
+                    className="h-64 w-full object-cover transition duration-500 group-hover:scale-105"
+/>
                 <div className="p-4 font-semibold">{image.title}</div>
               </div>
             ))}
@@ -264,7 +278,7 @@ export default function Home() {
             <div className="mt-6 h-72 rounded-3xl bg-white p-5 shadow-xl ring-1 ring-black/5">
               {/* Replace this box with Google Maps embed iframe */}
               <div className="flex h-full items-center justify-center rounded-2xl bg-[#FAF7F0] text-center text-slate-500">
-                Google Maps Embed Placeholder
+               Tegeta, Dar es Salaam Map Location
               </div>
             </div>
           </div>
