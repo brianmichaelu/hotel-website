@@ -41,7 +41,7 @@ export default function Home() {
   ];
 
   const galleryImages = [
-    { title: "Rooms", src: "/gallery-room.jpg" },
+    { title: "Rooms", src: "/rooms.png" },
     { title: "Restaurant", src: "/restaurant.png" },
     { title: "Reception", src: "/gallery-reception.jpg" },
     { title: "Outside View", src: "/outside.png" },
