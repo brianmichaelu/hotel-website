@@ -102,7 +102,6 @@ export default function Home() {
           </div>
 
           <div className="overflow-hidden rounded-[2rem] bg-[#FAF7F0] shadow-2xl">
-  {/* Replace /hotel-hero.jpg with actual hotel hero image */}
   <Image
     src="/hotel-hero.jpg"
     alt="Tegeta Palm Hotel exterior"
@@ -111,9 +110,6 @@ export default function Home() {
     className="h-[360px] w-full object-cover md:h-[520px]"
   />
 </div>
-        
-          </div>
-        </div>
       </section>
 
       {/* ABOUT */}
