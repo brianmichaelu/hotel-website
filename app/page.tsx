@@ -271,7 +271,9 @@ export default function Home() {
 
           <form className="rounded-[2rem] bg-white p-6 shadow-2xl ring-1 ring-black/5 md:p-8">
             <h3 className="text-2xl font-bold">Send an inquiry</h3>
-            <p className="mt-2 text-sm text-slate-500">UI only for now. No backend connected.</p>
+            <p className="mt-2 text-sm text-slate-500">
+                Send us your inquiry and our team will get back to you shortly.
+            </p>
             <div className="mt-6 grid gap-4">
               <input className="rounded-2xl border border-slate-200 px-4 py-3 outline-none focus:border-[#B8892D]" placeholder="Full name" />
               <input className="rounded-2xl border border-slate-200 px-4 py-3 outline-none focus:border-[#B8892D]" placeholder="Phone number" />
@@ -284,7 +286,7 @@ export default function Home() {
               </select>
               <textarea className="min-h-32 rounded-2xl border border-slate-200 px-4 py-3 outline-none focus:border-[#B8892D]" placeholder="Message" />
               <button type="button" className="rounded-full bg-[#0B1F3A] px-6 py-3 font-bold text-white transition hover:bg-[#132f55]">
-                Submit Inquiry
+                Send Booking Request
               </button>
             </div>
           </form>
