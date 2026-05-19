@@ -329,7 +329,11 @@ export default function Home() {
 </div>
           </div>
 
-          <form className="rounded-[2rem] bg-white p-6 shadow-2xl ring-1 ring-black/5 md:p-8">
+          <form <form
+             action={whatsappLink}
+              target="_blank"
+  
+            className="rounded-[2rem] bg-white p-6 shadow-2xl ring-1 ring-black/5 md:p-8">
             <h3 className="text-2xl font-bold">Send an inquiry</h3>
             <p className="mt-2 text-sm text-slate-500">
                 Send us your inquiry and our team will get back to you shortly.
