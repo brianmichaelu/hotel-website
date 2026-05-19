@@ -329,7 +329,7 @@ export default function Home() {
 </div>
           </div>
 
-          <form <form
+           <form
              action={whatsappLink}
               target="_blank"
   
