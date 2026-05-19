@@ -1,4 +1,6 @@
- import Image from "next/image";
+"use client";
+
+import Image from "next/image";
 import { useState } from "react";
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
