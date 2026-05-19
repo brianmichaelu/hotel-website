@@ -4,7 +4,8 @@ export default function Home() {
   const hotelName = "Tegeta Palm Hotel"; // Replace with real hotel name if needed
   const phoneNumber = "+255 689 824 682"; // Replace with real hotel phone number
   const email = "lubrun.enterprises@gmail.com"; // Replace with real hotel email
-  const whatsappLink = "https://wa.me/255689824682"; // Replace with real WhatsApp number, no + sign or spaces
+  const whatsappLink =
+  "https://wa.me/255689824682?text=Hello%20Tegeta%20Palm%20Hotel%2C%20I%20would%20like%20to%20book%20a%20room.";
 
   const rooms = [
     {
@@ -268,8 +269,7 @@ export default function Home() {
             <p className="text-sm font-bold uppercase tracking-[0.25em] text-[#B8892D]">Contact & booking</p>
             <h2 className="mt-3 text-3xl font-bold md:text-4xl">Book your stay in Tegeta today.</h2>
             <p className="mt-4 leading-8 text-slate-600">
-              Contact us directly for room availability, weekend stays, group bookings, airport transfer,
-              and meeting space inquiries.
+             Need a room or have a question? Contact us directly through WhatsApp or phone and we’ll assist you shortly.
             </p>
 
             <div className="mt-8 space-y-4 rounded-3xl bg-white p-6 shadow-xl ring-1 ring-black/5">
@@ -344,6 +344,16 @@ export default function Home() {
           © {new Date().getFullYear()} {hotelName}. All rights reserved.
         </div>
       </footer>
+
+        <a
+  href={whatsappLink}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="fixed bottom-5 right-5 z-50 flex items-center gap-2 rounded-full bg-[#25D366] px-5 py-3 text-sm font-bold text-white shadow-2xl transition hover:scale-105"
+>
+  WhatsApp Booking
+</a>
+      
     </main>
   );
 }
