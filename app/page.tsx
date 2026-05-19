@@ -227,7 +227,7 @@ export default function Home() {
         </div>
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {amenities.map((item) => (
-            <div key={item} className="rounded-2xl bg-white p-5 shadow-md ring-1 ring-black/5 transition duration-300 hover:-translate-y-1 hover:shadow-lg"
+            <div key={item} className="rounded-2xl bg-white p-5 shadow-md ring-1 ring-black/5 transition duration-300 hover:-translate-y-1 hover:shadow-lg">
               <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-[#FAF7F0] text-[#B8892D]">
                 ✓
               </div>
