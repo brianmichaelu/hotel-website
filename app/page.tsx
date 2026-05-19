@@ -44,7 +44,7 @@ export default function Home() {
     { title: "Rooms", src: "/gallery-room.jpg" },
     { title: "Restaurant", src: "/restaurant.png" },
     { title: "Reception", src: "/gallery-reception.jpg" },
-    { title: "Outside View", src: "/gallery-outside.jpg" },
+    { title: "Outside View", src: "/outside.png" },
   ];
 
   return (
