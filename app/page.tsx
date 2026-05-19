@@ -1,5 +1,7 @@
-  import Image from "next/image";
+ import Image from "next/image";
+import { useState } from "react";
 export default function Home() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   // ===== REPLACE THESE CLIENT DETAILS =====
   const hotelName = "Tegeta Palm Hotel"; // Replace with real hotel name if needed
   const phoneNumber = "+255 689 824 682"; // Replace with real hotel phone number
@@ -58,6 +60,12 @@ export default function Home() {
             {hotelName}
           </a>
           <nav className="hidden items-center gap-7 text-sm font-medium text-slate-700 md:flex">
+            <button
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              className="rounded-lg border border-slate-200 p-2 md:hidden"
+            >
+              ☰
+            </button>
             <a href="#about" className="hover:text-[#B8892D]">About</a>
             <a href="#rooms" className="hover:text-[#B8892D]">Rooms</a>
             <a href="#amenities" className="hover:text-[#B8892D]">Amenities</a>
@@ -70,6 +78,16 @@ export default function Home() {
             Book Now
           </a>
         </div>
+        {mobileMenuOpen && (
+          <div className="border-t border-slate-100 bg-white px-5 py-4 md:hidden">
+          <div className="flex flex-col gap-4 text-sm font-medium text-slate-700">
+            <a href="#about">About</a>
+            <a href="#rooms">Rooms</a>
+            <a href="#amenities">Amenities</a>
+            <a href="#contact">Contact</a>
+    </div>
+  </div>
+)}
       </header>
 
       {/* HERO */}
