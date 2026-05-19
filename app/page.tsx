@@ -72,45 +72,51 @@ export default function Home() {
       </header>
 
       {/* HERO */}
-      <section id="home" className="bg-white">
-        <div className="mx-auto grid max-w-7xl gap-10 px-5 py-16 md:grid-cols-2 md:items-center md:py-24">
-          <div>
-            <p className="mb-4 inline-flex rounded-full bg-[#FAF7F0] px-4 py-2 text-sm font-semibold text-[#B8892D]">
-              Local comfort near Bagamoyo Road
-            </p>
-            <h1 className="max-w-xl text-4xl font-extrabold leading-tight tracking-tight text-[#0B1F3A] md:text-6xl">
-              Comfortable Stays in Tegeta, Dar es Salaam
-            </h1>
-            <p className="mt-5 max-w-xl text-base leading-8 text-slate-600 md:text-lg">
-              Clean rooms, calm surroundings, and friendly local service with easy access to Mbezi Beach,
-              Bagamoyo Road, White Sands, and central Dar es Salaam.
-            </p>
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <a
-                href={whatsappLink}
-                className="rounded-full bg-[#0B1F3A] px-7 py-3 text-center text-sm font-bold text-white shadow-lg transition hover:bg-[#132f55]"
-              >
-                Book via WhatsApp
-              </a>
-              <a
-                href="#rooms"
-                className="rounded-full border border-[#B8892D] bg-white px-7 py-3 text-center text-sm font-bold text-[#0B1F3A] transition hover:bg-[#FAF7F0]"
-              >
-                View Rooms
-              </a>
-            </div>
-          </div>
+     {/* HERO */}
+<section id="home" className="bg-white">
+  <div className="mx-auto grid max-w-7xl gap-10 px-5 py-16 md:grid-cols-2 md:items-center md:py-24">
+    <div>
+      <p className="mb-4 inline-flex rounded-full bg-[#FAF7F0] px-4 py-2 text-sm font-semibold text-[#B8892D]">
+        Local comfort near Bagamoyo Road
+      </p>
 
-          <div className="overflow-hidden rounded-[2rem] bg-[#FAF7F0] shadow-2xl">
-  <Image
-    src="/hotel-hero.jpg"
-    alt="Tegeta Palm Hotel exterior"
-    width={1200}
-    height={800}
-    className="h-[360px] w-full object-cover md:h-[520px]"
-  />
-</div>
-      </section>
+      <h1 className="max-w-xl text-4xl font-extrabold leading-tight tracking-tight text-[#0B1F3A] md:text-6xl">
+        Comfortable Stays in Tegeta, Dar es Salaam
+      </h1>
+
+      <p className="mt-5 max-w-xl text-base leading-8 text-slate-600 md:text-lg">
+        Clean rooms, calm surroundings, and friendly local service with easy access to Mbezi Beach,
+        Bagamoyo Road, White Sands, and central Dar es Salaam.
+      </p>
+
+      <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+        <a
+          href={whatsappLink}
+          className="rounded-full bg-[#0B1F3A] px-7 py-3 text-center text-sm font-bold text-white shadow-lg transition hover:bg-[#132f55]"
+        >
+          Book via WhatsApp
+        </a>
+
+        <a
+          href="#rooms"
+          className="rounded-full border border-[#B8892D] bg-white px-7 py-3 text-center text-sm font-bold text-[#0B1F3A] transition hover:bg-[#FAF7F0]"
+        >
+          View Rooms
+        </a>
+      </div>
+    </div>
+
+    <div className="overflow-hidden rounded-[2rem] bg-[#FAF7F0] shadow-2xl">
+      <Image
+        src="/hotel-hero.jpg"
+        alt="Tegeta Palm Hotel exterior"
+        width={1200}
+        height={800}
+        className="h-[360px] w-full object-cover md:h-[520px]"
+      />
+    </div>
+  </div>
+</section>
 
       {/* ABOUT */}
       <section id="about" className="mx-auto max-w-7xl px-5 py-16 md:py-24">
