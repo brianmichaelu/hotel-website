@@ -42,7 +42,7 @@ export default function Home() {
 
   const galleryImages = [
     { title: "Rooms", src: "/gallery-room.jpg" },
-    { title: "Restaurant", src: "/gallery-restaurant.jpg" },
+    { title: "Restaurant", src: "/restaurant.png" },
     { title: "Reception", src: "/gallery-reception.jpg" },
     { title: "Outside View", src: "/gallery-outside.jpg" },
   ];
