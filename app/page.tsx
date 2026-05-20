@@ -31,6 +31,15 @@ Message: ${bookingForm.message}
 
   const encodedMessage = encodeURIComponent(message);
   window.open(`https://wa.me/255689824682?text=${encodedMessage}`, "_blank");
+  setBookingForm({
+  name: "",
+  phone: "",
+  checkIn: "",
+  checkOut: "",
+  roomType: "",
+  guests: "",
+  message: "",
+});
 };
   // ===== REPLACE THESE CLIENT DETAILS =====
   const hotelName = "Tegeta Palm Hotel"; // Replace with real hotel name if needed
