@@ -318,7 +318,7 @@ Message: ${bookingForm.message}
       </section>
 
       {/* NEARBY */}
-      <section <section id="about" className="reveal mx-auto max-w-7xl px-5 py-16 md:py-24">
+      <section id="about" className="reveal mx-auto max-w-7xl px-5 py-16 md:py-24">
         <div className="rounded-[2rem] bg-[#0B1F3A] p-8 text-white shadow-2xl md:p-12">
           <p className="text-sm font-bold uppercase tracking-[0.25em] text-[#D6B56D]">Nearby places</p>
           <h2 className="mt-3 text-3xl font-bold md:text-4xl">Well placed for beach, business, and city movement.</h2>
