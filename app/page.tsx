@@ -4,6 +4,34 @@ import Image from "next/image";
 import { useState } from "react";
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [bookingForm, setBookingForm] = useState({
+  name: "",
+  phone: "",
+  checkIn: "",
+  checkOut: "",
+  roomType: "",
+  guests: "",
+  message: "",
+});
+
+const handleBookingSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  e.preventDefault();
+
+  const message = `
+Hello ${hotelName}, I would like to make a booking request.
+
+Name: ${bookingForm.name}
+Phone: ${bookingForm.phone}
+Check-in: ${bookingForm.checkIn}
+Check-out: ${bookingForm.checkOut}
+Room Type: ${bookingForm.roomType}
+Guests: ${bookingForm.guests}
+Message: ${bookingForm.message}
+  `;
+
+  const encodedMessage = encodeURIComponent(message);
+  window.open(`https://wa.me/255689824682?text=${encodedMessage}`, "_blank");
+};
   // ===== REPLACE THESE CLIENT DETAILS =====
   const hotelName = "Tegeta Palm Hotel"; // Replace with real hotel name if needed
   const phoneNumber = "+255 689 824 682"; // Replace with real hotel phone number
@@ -334,8 +362,7 @@ export default function Home() {
           </div>
 
            <form
-             action={whatsappLink}
-              target="_blank"
+              onSubmit={handleBookingSubmit}
   
             className="rounded-[2rem] bg-white p-6 shadow-2xl ring-1 ring-black/5 md:p-8">
             <h3 className="text-2xl font-bold">Request a Booking</h3>
@@ -344,24 +371,30 @@ export default function Home() {
             </p>
             <div className="mt-6 grid gap-4">
   <input
-    className="rounded-2xl border border-slate-200 px-4 py-3 outline-none focus:border-[#B8892D]"
-    placeholder="Full name"
-  />
+  value={bookingForm.name}
+  onChange={(e) => setBookingForm({ ...bookingForm, name: e.target.value })}
+  className="rounded-2xl border border-slate-200 px-4 py-3 outline-none focus:border-[#B8892D]"
+  placeholder="Full name"
+/>
 
   <input
-    className="rounded-2xl border border-slate-200 px-4 py-3 outline-none focus:border-[#B8892D]"
-    placeholder="Phone number"
-  />
+  value={bookingForm.phone}
+  onChange={(e) => setBookingForm({ ...bookingForm, phone: e.target.value })}
+  className="rounded-2xl border border-slate-200 px-4 py-3 outline-none focus:border-[#B8892D]"
+  placeholder="Phone number"
+/>
 
   <div className="grid gap-4 sm:grid-cols-2">
     <div>
       <label className="mb-2 block text-sm font-semibold text-slate-700">
         Check-in
       </label>
-      <input
-        type="date"
-        className="w-full rounded-2xl border border-slate-200 px-4 py-3 outline-none focus:border-[#B8892D]"
-      />
+     <input
+  type="date"
+  value={bookingForm.checkIn}
+  onChange={(e) => setBookingForm({ ...bookingForm, checkIn: e.target.value })}
+  className="w-full rounded-2xl border border-slate-200 px-4 py-3 outline-none focus:border-[#B8892D]"
+/>
     </div>
 
     <div>
@@ -369,9 +402,11 @@ export default function Home() {
         Check-out
       </label>
       <input
-        type="date"
-        className="w-full rounded-2xl border border-slate-200 px-4 py-3 outline-none focus:border-[#B8892D]"
-      />
+  type="date"
+  value={bookingForm.checkOut}
+  onChange={(e) => setBookingForm({ ...bookingForm, checkOut: e.target.value })}
+  className="w-full rounded-2xl border border-slate-200 px-4 py-3 outline-none focus:border-[#B8892D]"
+/>
     </div>
   </div>
 
