@@ -105,13 +105,13 @@ Message: ${bookingForm.message}
       {/* HEADER */}
 <header className="sticky top-0 z-50 border-b border-black/5 bg-white/90 backdrop-blur">
   <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4">
-   <a href="#home" className="flex items-center">
+  <a href="#home" className="flex items-center">
   <Image
     src="/homelogo.png"
     alt="Tegeta Palm Hotel logo"
-    width={260}
-    height={100}
-    className="h-16 w-auto object-contain"
+    width={360}
+    height={140}
+    className="h-20 w-auto object-contain md:h-24"
     priority
   />
 </a>
