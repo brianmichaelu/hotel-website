@@ -73,15 +73,15 @@ Message: ${bookingForm.message}
   ];
 
   const amenities = [
-    "Free Wi-Fi",
-    "Air conditioning",
-    "Breakfast",
-    "Secure parking",
-    "Restaurant",
-    "24/7 reception",
-    "Airport transfer on request",
-    "Conference / meeting space",
-  ];
+  { name: "Free Wi-Fi", icon: "📶" },
+  { name: "Air conditioning", icon: "❄️" },
+  { name: "Breakfast", icon: "☕" },
+  { name: "Secure parking", icon: "🚗" },
+  { name: "Restaurant", icon: "🍽️" },
+  { name: "24/7 reception", icon: "🛎️" },
+  { name: "Airport transfer on request", icon: "✈️" },
+  { name: "Conference / meeting space", icon: "💼" },
+];
 
   const galleryImages = [
     { title: "Rooms", src: "/rooms.png" },
@@ -266,13 +266,16 @@ Message: ${bookingForm.message}
         </div>
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {amenities.map((item) => (
-            <div key={item} className="rounded-2xl bg-white p-5 shadow-md ring-1 ring-black/5 transition duration-300 hover:-translate-y-1 hover:shadow-lg">
-              <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-[#FAF7F0] text-[#B8892D]">
-                ✓
-              </div>
-              <p className="font-semibold">{item}</p>
-            </div>
-          ))}
+  <div
+    key={item.name}
+    className="rounded-2xl bg-white p-5 shadow-md ring-1 ring-black/5 transition duration-300 hover:-translate-y-1 hover:shadow-lg"
+  >
+    <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-[#FAF7F0] text-2xl">
+      {item.icon}
+    </div>
+    <p className="font-semibold">{item.name}</p>
+  </div>
+))}
         </div>
       </section>
 
