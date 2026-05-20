@@ -411,23 +411,22 @@ Message: ${bookingForm.message}
   </div>
 
   <div className="grid gap-4 sm:grid-cols-2">
-    <select className="rounded-2xl border border-slate-200 px-4 py-3 outline-none focus:border-[#B8892D]">
-      <option>Select room type</option>
-      <option>Standard Room</option>
-      <option>Deluxe Room</option>
-      <option>Family Room</option>
-    </select>
+    <select
+  value={bookingForm.roomType}
+  onChange={(e) => setBookingForm({ ...bookingForm, roomType: e.target.value })}
+  className="rounded-2xl border border-slate-200 px-4 py-3 outline-none focus:border-[#B8892D]"
+>
 
-    <select className="rounded-2xl border border-slate-200 px-4 py-3 outline-none focus:border-[#B8892D]">
-      <option>Guests</option>
-      <option>1 Guest</option>
-      <option>2 Guests</option>
-      <option>3 Guests</option>
-      <option>4+ Guests</option>
-    </select>
+    <select
+  value={bookingForm.guests}
+  onChange={(e) => setBookingForm({ ...bookingForm, guests: e.target.value })}
+  className="rounded-2xl border border-slate-200 px-4 py-3 outline-none focus:border-[#B8892D]"
+>
   </div>
 
   <textarea
+  value={bookingForm.message}
+  onChange={(e) => setBookingForm({ ...bookingForm, message: e.target.value })}
   className="min-h-28 rounded-2xl border border-slate-200 px-4 py-3 outline-none focus:border-[#B8892D]"
   placeholder="Special request or message"
 />
