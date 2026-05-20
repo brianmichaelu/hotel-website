@@ -9,7 +9,7 @@ export default function Home() {
   const phoneNumber = "+255 689 824 682"; // Replace with real hotel phone number
   const email = "lubrun.enterprises@gmail.com"; // Replace with real hotel email
   const whatsappLink =
-  "https://wa.me/255689824682?text=Hello%20Tegeta%20Palm%20Hotel%2C%20I%20would%20like%20to%20book%20a%20room.";
+  "https://wa.me/255689824682?text=Hello%20Tegeta%20Palm%20Hotel%2C%20I%20would%20like%20to%20make%20a%20booking%20request.";
 
   const rooms = [
     {
