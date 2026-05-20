@@ -391,11 +391,18 @@ export default function Home() {
   </div>
 
   <textarea
-    className="min-h-28 rounded-2xl border border-slate-200 px-4 py-3 outline-none focus:border-[#B8892D]"
-    placeholder="Special request or message"
-  />
+  className="min-h-28 rounded-2xl border border-slate-200 px-4 py-3 outline-none focus:border-[#B8892D]"
+  placeholder="Special request or message"
+/>
 
-  <p className="text-center text-xs text-slate-500">
+<button
+  type="submit"
+  className="cursor-pointer rounded-full bg-[#0B1F3A] px-6 py-3 font-bold text-white transition hover:scale-105 hover:bg-[#132f55]"
+>
+  Send Booking Request
+</button>
+
+<p className="text-center text-xs text-slate-500">
   Your request will open in WhatsApp for quick confirmation.
 </p>
 </div>
