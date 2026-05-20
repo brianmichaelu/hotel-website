@@ -203,7 +203,7 @@ Message: ${bookingForm.message}
 </section>
 
       {/* ABOUT */}
-      <section id="about" className="mx-auto max-w-7xl px-5 py-16 md:py-24">
+      <section id="about" className="reveal mx-auto max-w-7xl px-5 py-16 md:py-24">
         <div className="grid gap-8 md:grid-cols-[1fr_1.3fr] md:items-center">
           <div>
             <p className="text-sm font-bold uppercase tracking-[0.25em] text-[#B8892D]">About us</p>
@@ -218,7 +218,7 @@ Message: ${bookingForm.message}
       </section>
 
       {/* ROOMS */}
-      <section id="rooms" className="bg-white py-16 md:py-24">
+      <section id="rooms"  className="reveal mx-auto max-w-7xl px-5 py-16 md:py-24">
         <div className="mx-auto max-w-7xl px-5">
           <div className="mb-10 max-w-2xl">
             <p className="text-sm font-bold uppercase tracking-[0.25em] text-[#B8892D]">Rooms</p>
@@ -230,7 +230,7 @@ Message: ${bookingForm.message}
 
           <div className="grid gap-6 md:grid-cols-3">
             {rooms.map((room) => (
-              <article key={room.name} className="overflow-hidden rounded-3xl bg-white shadow-xl ring-1 ring-black/5 transition duration-300 hover:-translate-y-2 hover:shadow-2xl"
+              <article key={room.name} className="reveal overflow-hidden rounded-3xl bg-white shadow-xl ring-1 ring-black/5 transition duration-300 hover:-translate-y-2 hover:shadow-2xl"
               >
                  <Image
                     src={room.image}
@@ -269,7 +269,7 @@ Message: ${bookingForm.message}
       </section>
 
       {/* AMENITIES */}
-      <section id="amenities" className="mx-auto max-w-7xl px-5 py-16 md:py-24">
+      <section id="amenities" className="reveal mx-auto max-w-7xl px-5 py-16 md:py-24">
         <div className="mb-10 max-w-2xl">
           <p className="text-sm font-bold uppercase tracking-[0.25em] text-[#B8892D]">Amenities</p>
           <h2 className="mt-3 text-3xl font-bold md:text-4xl">Everything guests need for a smooth stay.</h2>
@@ -294,7 +294,7 @@ Message: ${bookingForm.message}
       </section>
 
       {/* GALLERY */}
-      <section className="bg-white py-16 md:py-24">
+      <section className="reveal mx-auto max-w-7xl px-5 py-16 md:py-24">
         <div className="mx-auto max-w-7xl px-5">
           <div className="mb-10 max-w-2xl">
             <p className="text-sm font-bold uppercase tracking-[0.25em] text-[#B8892D]">Gallery</p>
@@ -318,7 +318,7 @@ Message: ${bookingForm.message}
       </section>
 
       {/* NEARBY */}
-      <section className="mx-auto max-w-7xl px-5 py-16 md:py-24">
+      <section <section id="about" className="reveal mx-auto max-w-7xl px-5 py-16 md:py-24">
         <div className="rounded-[2rem] bg-[#0B1F3A] p-8 text-white shadow-2xl md:p-12">
           <p className="text-sm font-bold uppercase tracking-[0.25em] text-[#D6B56D]">Nearby places</p>
           <h2 className="mt-3 text-3xl font-bold md:text-4xl">Well placed for beach, business, and city movement.</h2>
@@ -333,7 +333,7 @@ Message: ${bookingForm.message}
       </section>
 
       {/* REVIEWS */}
-      <section className="bg-white py-16 md:py-24">
+      <section className="reveal mx-auto max-w-7xl px-5 py-16 md:py-24">
         <div className="mx-auto max-w-7xl px-5">
           <div className="mb-10 max-w-2xl">
             <p className="text-sm font-bold uppercase tracking-[0.25em] text-[#B8892D]">Guest reviews</p>
@@ -355,7 +355,7 @@ Message: ${bookingForm.message}
       </section>
 
       {/* CONTACT */}
-      <section id="contact" className="mx-auto max-w-7xl px-5 py-16 md:py-24">
+      <section id="contact" className="reveal mx-auto max-w-7xl px-5 py-16 md:py-24">
         <div className="grid gap-8 lg:grid-cols-2">
           <div>
             <p className="text-sm font-bold uppercase tracking-[0.25em] text-[#B8892D]">Contact & booking</p>
