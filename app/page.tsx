@@ -90,7 +90,7 @@ export default function Home() {
   </div>
 
   {mobileMenuOpen && (
-    <div className="border-t border-slate-100 bg-white px-5 py-4 md:hidden">
+    <div className="border-t border-slate-100 bg-white px-5 py-4 md:hidden">      
       <div className="flex flex-col gap-4 text-sm font-medium text-slate-700">
         <a onClick={() => setMobileMenuOpen(false)} href="#home">Home</a>
         <a onClick={() => setMobileMenuOpen(false)} href="#about">About</a>
@@ -340,7 +340,7 @@ export default function Home() {
             className="rounded-[2rem] bg-white p-6 shadow-2xl ring-1 ring-black/5 md:p-8">
             <h3 className="text-2xl font-bold">Request a Booking</h3>
             <p className="mt-2 text-sm text-slate-500">
-                Send us your inquiry and our team will get back to you shortly.
+               Fill in your stay details, then continue through WhatsApp for quick confirmation.
             </p>
             <div className="mt-6 grid gap-4">
   <input
@@ -424,6 +424,7 @@ export default function Home() {
           <div>
             <h4 className="font-bold">Navigation</h4>
             <div className="mt-3 grid gap-2 text-sm text-white/70">
+              <a href="#home">Home</a>
               <a href="#about">About</a>
               <a href="#rooms">Rooms</a>
               <a href="#amenities">Amenities</a>
