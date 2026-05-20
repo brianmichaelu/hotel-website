@@ -336,25 +336,72 @@ export default function Home() {
               target="_blank"
   
             className="rounded-[2rem] bg-white p-6 shadow-2xl ring-1 ring-black/5 md:p-8">
-            <h3 className="text-2xl font-bold">Send an inquiry</h3>
+            <h3 className="text-2xl font-bold">Request a Booking</h3>
             <p className="mt-2 text-sm text-slate-500">
                 Send us your inquiry and our team will get back to you shortly.
             </p>
             <div className="mt-6 grid gap-4">
-              <input className="rounded-2xl border border-slate-200 px-4 py-3 outline-none focus:border-[#B8892D]" placeholder="Full name" />
-              <input className="rounded-2xl border border-slate-200 px-4 py-3 outline-none focus:border-[#B8892D]" placeholder="Phone number" />
-              <input className="rounded-2xl border border-slate-200 px-4 py-3 outline-none focus:border-[#B8892D]" placeholder="Email address" />
-              <select className="rounded-2xl border border-slate-200 px-4 py-3 outline-none focus:border-[#B8892D]">
-                <option>Select room type</option>
-                <option>Standard Room</option>
-                <option>Deluxe Room</option>
-                <option>Family Room</option>
-              </select>
-              <textarea className="min-h-32 rounded-2xl border border-slate-200 px-4 py-3 outline-none focus:border-[#B8892D]" placeholder="Message" />
-              <button type="submit" className="cursor-pointer rounded-full bg-[#0B1F3A] px-6 py-3 font-bold text-white transition hover:bg-[#132f55]">
-                Send Booking Request
-              </button>
-            </div>
+  <input
+    className="rounded-2xl border border-slate-200 px-4 py-3 outline-none focus:border-[#B8892D]"
+    placeholder="Full name"
+  />
+
+  <input
+    className="rounded-2xl border border-slate-200 px-4 py-3 outline-none focus:border-[#B8892D]"
+    placeholder="Phone number"
+  />
+
+  <div className="grid gap-4 sm:grid-cols-2">
+    <div>
+      <label className="mb-2 block text-sm font-semibold text-slate-700">
+        Check-in
+      </label>
+      <input
+        type="date"
+        className="w-full rounded-2xl border border-slate-200 px-4 py-3 outline-none focus:border-[#B8892D]"
+      />
+    </div>
+
+    <div>
+      <label className="mb-2 block text-sm font-semibold text-slate-700">
+        Check-out
+      </label>
+      <input
+        type="date"
+        className="w-full rounded-2xl border border-slate-200 px-4 py-3 outline-none focus:border-[#B8892D]"
+      />
+    </div>
+  </div>
+
+  <div className="grid gap-4 sm:grid-cols-2">
+    <select className="rounded-2xl border border-slate-200 px-4 py-3 outline-none focus:border-[#B8892D]">
+      <option>Select room type</option>
+      <option>Standard Room</option>
+      <option>Deluxe Room</option>
+      <option>Family Room</option>
+    </select>
+
+    <select className="rounded-2xl border border-slate-200 px-4 py-3 outline-none focus:border-[#B8892D]">
+      <option>Guests</option>
+      <option>1 Guest</option>
+      <option>2 Guests</option>
+      <option>3 Guests</option>
+      <option>4+ Guests</option>
+    </select>
+  </div>
+
+  <textarea
+    className="min-h-28 rounded-2xl border border-slate-200 px-4 py-3 outline-none focus:border-[#B8892D]"
+    placeholder="Special request or message"
+  />
+
+  <button
+    type="submit"
+    className="cursor-pointer rounded-full bg-[#0B1F3A] px-6 py-3 font-bold text-white transition hover:scale-105 hover:bg-[#132f55]"
+  >
+    Send Booking Request
+  </button>
+</div>
           </form>
         </div>
       </section>
