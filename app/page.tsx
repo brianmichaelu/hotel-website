@@ -346,7 +346,12 @@ Message: ${bookingForm.message}
             <p className="mt-4 leading-8 text-slate-600">
              Need a room or have a question? Contact us directly through WhatsApp or phone and we’ll assist you shortly.
             </p>
-
+            
+            <p className="mt-3 font-semibold text-[#0B1F3A]">
+                  Direct booking is available through WhatsApp, phone, or email.
+            </p>
+            
+            
             <div className="mt-8 space-y-4 rounded-3xl bg-white p-6 shadow-xl ring-1 ring-black/5">
               <a href={whatsappLink} className="block rounded-full bg-[#25D366] px-6 py-3 text-center font-bold text-white">
                 Book via WhatsApp
