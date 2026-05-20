@@ -63,6 +63,7 @@ export default function Home() {
     </a>
 
     <nav className="hidden items-center gap-7 text-sm font-medium text-slate-700 md:flex">
+      <a href="#home" className="hover:text-[#B8892D]">Home</a>
       <a href="#about" className="hover:text-[#B8892D]">About</a>
       <a href="#rooms" className="hover:text-[#B8892D]">Rooms</a>
       <a href="#amenities" className="hover:text-[#B8892D]">Amenities</a>
@@ -91,6 +92,7 @@ export default function Home() {
   {mobileMenuOpen && (
     <div className="border-t border-slate-100 bg-white px-5 py-4 md:hidden">
       <div className="flex flex-col gap-4 text-sm font-medium text-slate-700">
+        <a onClick={() => setMobileMenuOpen(false)} href="#home">Home</a>
         <a onClick={() => setMobileMenuOpen(false)} href="#about">About</a>
         <a onClick={() => setMobileMenuOpen(false)} href="#rooms">Rooms</a>
         <a onClick={() => setMobileMenuOpen(false)} href="#amenities">Amenities</a>
