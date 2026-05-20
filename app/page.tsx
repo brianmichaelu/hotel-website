@@ -395,12 +395,9 @@ export default function Home() {
     placeholder="Special request or message"
   />
 
-  <button
-    type="submit"
-    className="cursor-pointer rounded-full bg-[#0B1F3A] px-6 py-3 font-bold text-white transition hover:scale-105 hover:bg-[#132f55]"
-  >
-    Send Booking Request
-  </button>
+  <p className="text-center text-xs text-slate-500">
+  Your request will open in WhatsApp for quick confirmation.
+</p>
 </div>
           </form>
         </div>
