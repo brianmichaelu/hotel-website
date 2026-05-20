@@ -411,20 +411,31 @@ Message: ${bookingForm.message}
   </div>
 
   <div className="grid gap-4 sm:grid-cols-2">
-    <select
-  value={bookingForm.roomType}
-  onChange={(e) => setBookingForm({ ...bookingForm, roomType: e.target.value })}
-  className="rounded-2xl border border-slate-200 px-4 py-3 outline-none focus:border-[#B8892D]"
->
+  <select
+    value={bookingForm.roomType}
+    onChange={(e) => setBookingForm({ ...bookingForm, roomType: e.target.value })}
+    className="rounded-2xl border border-slate-200 px-4 py-3 outline-none focus:border-[#B8892D]"
+  >
+    <option value="">Select room type</option>
+    <option value="Standard Room">Standard Room</option>
+    <option value="Deluxe Room">Deluxe Room</option>
+    <option value="Family Room">Family Room</option>
+  </select>
 
-    <select
-  value={bookingForm.guests}
-  onChange={(e) => setBookingForm({ ...bookingForm, guests: e.target.value })}
-  className="rounded-2xl border border-slate-200 px-4 py-3 outline-none focus:border-[#B8892D]"
->
-  </div>
+  <select
+    value={bookingForm.guests}
+    onChange={(e) => setBookingForm({ ...bookingForm, guests: e.target.value })}
+    className="rounded-2xl border border-slate-200 px-4 py-3 outline-none focus:border-[#B8892D]"
+  >
+    <option value="">Guests</option>
+    <option value="1 Guest">1 Guest</option>
+    <option value="2 Guests">2 Guests</option>
+    <option value="3 Guests">3 Guests</option>
+    <option value="4+ Guests">4+ Guests</option>
+  </select>
+</div>
 
-  <textarea
+<textarea
   value={bookingForm.message}
   onChange={(e) => setBookingForm({ ...bookingForm, message: e.target.value })}
   className="min-h-28 rounded-2xl border border-slate-200 px-4 py-3 outline-none focus:border-[#B8892D]"
