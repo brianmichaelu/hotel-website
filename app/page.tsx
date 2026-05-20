@@ -107,7 +107,7 @@ Message: ${bookingForm.message}
   <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4">
    <a href="#home" className="flex items-center">
   <Image
-    src="/logo.png"
+    src="/homelogo.png"
     alt="Tegeta Palm Hotel logo"
     width={160}
     height={60}
