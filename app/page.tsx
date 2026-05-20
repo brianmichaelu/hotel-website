@@ -2,6 +2,16 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import {
+  Wifi,
+  Snowflake,
+  Coffee,
+  Car,
+  Utensils,
+  Bell,
+  Plane,
+  BriefcaseBusiness,
+} from "lucide-react";
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [bookingForm, setBookingForm] = useState({
@@ -72,15 +82,15 @@ Message: ${bookingForm.message}
     },
   ];
 
-  const amenities = [
-  { name: "Free Wi-Fi", icon: "📶" },
-  { name: "Air conditioning", icon: "❄️" },
-  { name: "Breakfast", icon: "☕" },
-  { name: "Secure parking", icon: "🚗" },
-  { name: "Restaurant", icon: "🍽️" },
-  { name: "24/7 reception", icon: "🛎️" },
-  { name: "Airport transfer on request", icon: "✈️" },
-  { name: "Conference / meeting space", icon: "💼" },
+ const amenities = [
+  { name: "Free Wi-Fi", icon: Wifi },
+  { name: "Air conditioning", icon: Snowflake },
+  { name: "Breakfast", icon: Coffee },
+  { name: "Secure parking", icon: Car },
+  { name: "Restaurant", icon: Utensils },
+  { name: "24/7 reception", icon: Bell },
+  { name: "Airport transfer on request", icon: Plane },
+  { name: "Conference / meeting space", icon: BriefcaseBusiness },
 ];
 
   const galleryImages = [
@@ -265,17 +275,21 @@ Message: ${bookingForm.message}
           <h2 className="mt-3 text-3xl font-bold md:text-4xl">Everything guests need for a smooth stay.</h2>
         </div>
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          {amenities.map((item) => (
-  <div
-    key={item.name}
-    className="rounded-2xl bg-white p-5 shadow-md ring-1 ring-black/5 transition duration-300 hover:-translate-y-1 hover:shadow-lg"
-  >
-    <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-[#FAF7F0] text-2xl">
-      {item.icon}
+          {amenities.map((item) => {
+  const Icon = item.icon;
+
+  return (
+    <div
+      key={item.name}
+      className="rounded-2xl bg-white p-5 shadow-md ring-1 ring-black/5 transition duration-300 hover:-translate-y-1 hover:shadow-lg"
+    >
+      <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-[#FAF7F0] text-[#B8892D]">
+        <Icon size={24} strokeWidth={2.2} />
+      </div>
+      <p className="font-semibold">{item.name}</p>
     </div>
-    <p className="font-semibold">{item.name}</p>
-  </div>
-))}
+  );
+})}
         </div>
       </section>
 
