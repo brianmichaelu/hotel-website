@@ -103,31 +103,33 @@ Message: ${bookingForm.message}
   return (
     <main className="min-h-screen bg-[#FAF7F0] text-[#0B1F3A]">
       {/* HEADER */}
-<header className="sticky top-0 z-50 border-b border-black/5 bg-white/90 backdrop-blur">
-  <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4">
-  <a href="#home" className="flex items-center">
-  <Image
-    src="/homelogo.png"
-    alt="Tegeta Palm Hotel logo"
-    width={360}
-    height={140}
-    className="h-20 w-auto object-contain md:h-24"
-    priority
-  />
-</a>
+<header className="sticky top-0 z-50 border-b border-[#E8DDC8] bg-white/95 shadow-sm backdrop-blur">
+  <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-3">
+    <a href="#home" className="flex items-center rounded-2xl bg-[#0B1F3A] px-3 py-2 shadow-md">
+      <Image
+        src="/homelogo.png"
+        alt="Tegeta Palm Hotel logo"
+        width={360}
+        height={140}
+        className="h-16 w-auto object-contain md:h-20"
+        priority
+      />
+    </a>
 
-    <nav className="hidden items-center gap-7 text-sm font-medium text-slate-700 md:flex">
-      <a href="#home" className="hover:text-[#B8892D]">Home</a>
-      <a href="#about" className="hover:text-[#B8892D]">About</a>
-      <a href="#rooms" className="hover:text-[#B8892D]">Rooms</a>
-      <a href="#amenities" className="hover:text-[#B8892D]">Amenities</a>
-      <a href="#contact" className="hover:text-[#B8892D]">Contact</a>
+    <nav className="hidden items-center rounded-full bg-[#FAF7F0] px-6 py-3 text-sm font-semibold text-slate-700 shadow-sm md:flex md:gap-7">
+      <a href="#home" className="transition hover:text-[#B8892D]">Home</a>
+      <a href="#about" className="transition hover:text-[#B8892D]">About</a>
+      <a href="#rooms" className="transition hover:text-[#B8892D]">Rooms</a>
+      <a href="#amenities" className="transition hover:text-[#B8892D]">Amenities</a>
+      <a href="#contact" className="transition hover:text-[#B8892D]">Contact</a>
     </nav>
 
     <div className="flex items-center gap-3">
       <a
         href={whatsappLink}
-        className="hidden rounded-full bg-[#B8892D] px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-[#9f7626] sm:inline-flex"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hidden rounded-full bg-[#B8892D] px-5 py-3 text-sm font-bold text-white shadow-md transition hover:scale-105 hover:bg-[#9f7626] sm:inline-flex"
       >
         Book Now
       </a>
@@ -135,7 +137,7 @@ Message: ${bookingForm.message}
       <button
         type="button"
         onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-        className="rounded-lg border border-slate-200 px-3 py-2 text-2xl leading-none text-[#0B1F3A] md:hidden"
+        className="rounded-xl border border-[#E8DDC8] bg-[#FAF7F0] px-3 py-2 text-2xl leading-none text-[#0B1F3A] shadow-sm md:hidden"
         aria-label="Open mobile menu"
       >
         ☰
