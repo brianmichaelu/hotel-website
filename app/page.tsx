@@ -124,6 +124,13 @@ Message: ${bookingForm.message}
       <a href="#contact" className="transition hover:text-[#B8892D]">Contact</a>
     </nav>
 
+    <a
+  href={whatsappLink}
+  className="hidden rounded-full bg-[#B8892D] px-7 py-3 text-sm font-bold text-white shadow-lg transition hover:bg-[#a67722] md:inline-flex"
+>
+  Book Now
+</a>
+
     <div className="flex items-center gap-3">
       
 
