@@ -311,29 +311,42 @@ Message: ${bookingForm.message}
   </div>
 </section>
       {/* AMENITIES */}
-      <section id="amenities" className="reveal mx-auto max-w-7xl px-5 py-16 md:py-24">
-        <div className="mb-10 max-w-2xl">
-          <p className="text-sm font-bold uppercase tracking-[0.25em] text-[#B8892D]">Amenities</p>
-          <h2 className="mt-3 text-3xl font-bold md:text-4xl">Everything guests need for a smooth stay.</h2>
-        </div>
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          {amenities.map((item) => {
-  const Icon = item.icon;
+      {/* AMENITIES */}
+<section
+  id="amenities"
+  className="reveal scroll-mt-40 mx-auto max-w-7xl px-5 pt-10 pb-16 md:pt-12 md:pb-20"
+>
+  <div className="mb-10 max-w-2xl">
+    <p className="text-sm font-bold uppercase tracking-[0.25em] text-[#B8892D]">
+      Amenities
+    </p>
 
-  return (
-    <div
-      key={item.name}
-      className="rounded-2xl bg-white p-5 shadow-md ring-1 ring-black/5 transition duration-300 hover:-translate-y-1 hover:shadow-lg"
-    >
-      <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-[#FAF7F0] text-[#B8892D]">
-        <Icon size={24} strokeWidth={2.2} />
-      </div>
-      <p className="font-semibold">{item.name}</p>
-    </div>
-  );
-})}
+    <h2 className="mt-3 text-3xl font-bold leading-tight text-[#0B1F3A] md:text-4xl">
+      Everything guests need for a smooth stay.
+    </h2>
+  </div>
+
+  <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+    {amenities.map((item) => {
+      const Icon = item.icon;
+
+      return (
+        <div
+          key={item.name}
+          className="rounded-2xl bg-white p-6 shadow-md ring-1 ring-black/5 transition duration-300 hover:-translate-y-1 hover:shadow-lg"
+        >
+          <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-[#FAF7F0] text-[#B8892D]">
+            <Icon size={24} strokeWidth={2.2} />
+          </div>
+
+          <p className="font-semibold text-[#0B1F3A]">
+            {item.name}
+          </p>
         </div>
-      </section>
+      );
+    })}
+  </div>
+</section>
 
       {/* GALLERY */}
       <section className="reveal mx-auto max-w-7xl px-5 py-16 md:py-24">
