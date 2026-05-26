@@ -57,7 +57,25 @@ Message: ${bookingForm.message}
   const email = "lubrun.enterprises@gmail.com"; // Replace with real hotel email
   const whatsappLink =
   "https://wa.me/255689824682?text=Hello%20Tegeta%20Palm%20Hotel%2C%20I%20would%20like%20to%20make%20a%20booking%20request.";
+const whatsappNumber = phoneNumber.replace(/\D/g, "");
 
+const createRoomWhatsAppLink = (room: {
+  name: string;
+  price: string;
+  description: string;
+  amenities: string[];
+}) => {
+  const message = `Hello ${hotelName}, I would like to book this room.
+
+Room: ${room.name}
+Price: ${room.price}
+Description: ${room.description}
+Amenities: ${room.amenities.join(", ")}
+
+Please confirm availability.`;
+
+  return `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+};
   const rooms = [
     {
       name: "Standard Room",
@@ -125,10 +143,12 @@ Message: ${bookingForm.message}
     </nav>
 
     <a
-  href={whatsappLink}
-  className="hidden rounded-full bg-[#B8892D] px-7 py-3 text-sm font-bold text-white shadow-lg transition hover:bg-[#a67722] md:inline-flex"
+  href={createRoomWhatsAppLink(room)}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="mt-6 block rounded-full bg-[#0B1F3A] px-5 py-3 text-center text-sm font-bold text-white transition hover:bg-[#132f55]"
 >
-  Book Now
+  Book Room
 </a>
 
     <div className="flex items-center gap-3">
