@@ -125,12 +125,7 @@ Message: ${bookingForm.message}
     </nav>
 
     <div className="flex items-center gap-3">
-      <a
-  href={whatsappLink}
-  className="fixed bottom-6 right-6 z-40 hidden rounded-full bg-green-500 px-7 py-4 text-sm font-bold text-white shadow-2xl transition hover:bg-green-600 lg:inline-flex"
->
-  WhatsApp Booking
-</a>
+      
 
       <button
         type="button"
