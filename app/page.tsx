@@ -164,16 +164,17 @@ Message: ${bookingForm.message}
     </div>
   )}
 </header>
-      {/* HERO */}
-   {/* HERO */}
+      
+  {/* HERO */}
+      
 <section id="home" className="bg-white">
-  <div className="mx-auto grid max-w-7xl gap-10 px-5 py-14 md:grid-cols-2 md:items-center md:py-20 lg:py-24">
+  <div className="mx-auto grid max-w-7xl gap-10 px-5 pt-8 pb-14 md:grid-cols-2 md:items-center md:pt-12 md:pb-20 lg:pt-14 lg:pb-24">
     <div>
       <p className="mb-4 inline-flex rounded-full bg-[#FAF7F0] px-4 py-2 text-sm font-semibold text-[#B8892D]">
         Local comfort near Bagamoyo Road
       </p>
 
-      <h1 className="max-w-xl text-4xl font-extrabold leading-tight tracking-tight text-[#0B1F3A] sm:text-5xl lg:text-6xl">
+      <h1 className="max-w-xl text-4xl font-extrabold leading-tight tracking-tight text-[#0B1F3A] sm:text-5xl lg:text-[56px]">
         Comfortable Stays in Tegeta, Dar es Salaam
       </h1>
 
