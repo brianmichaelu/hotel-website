@@ -217,7 +217,7 @@ Message: ${bookingForm.message}
       
 <section
   id="about"
-  className="reveal scroll-mt-40 mx-auto max-w-7xl px-5 pt-12 pb-16 md:pt-16 md:pb-20"
+  className="reveal scroll-mt-40 mx-auto max-w-7xl px-5 pt-12 pb-10 md:pt-16 md:pb-12"
 >
   <div className="grid gap-8 md:grid-cols-[1fr_1.3fr] md:items-center">
     <div>
