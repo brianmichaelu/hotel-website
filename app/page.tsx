@@ -319,7 +319,9 @@ Please confirm availability.`;
             </ul>
 
             <a
-              href={whatsappLink}
+              href={createRoomWhatsAppLink(room)}
+              target="_blank"
+              rel="noopener noreferrer"
               className="mt-6 block rounded-full bg-[#0B1F3A] px-5 py-3 text-center text-sm font-bold text-white transition hover:bg-[#132f55]"
             >
               Book Room
@@ -330,8 +332,9 @@ Please confirm availability.`;
     </div>
   </div>
 </section>
+      
       {/* AMENITIES */}
-      {/* AMENITIES */}
+      
 <section
   id="amenities"
   className="reveal scroll-mt-36 mx-auto max-w-7xl px-5 pt-8 pb-16 md:pt-10 md:pb-20"
