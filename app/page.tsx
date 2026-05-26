@@ -126,13 +126,11 @@ Message: ${bookingForm.message}
 
     <div className="flex items-center gap-3">
       <a
-        href={whatsappLink}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="hidden rounded-full bg-[#B8892D] px-5 py-3 text-sm font-bold text-white shadow-md transition hover:scale-105 hover:bg-[#9f7626] sm:inline-flex"
-      >
-        Book Now
-      </a>
+  href={whatsappLink}
+  className="fixed bottom-6 right-6 z-40 hidden rounded-full bg-green-500 px-7 py-4 text-sm font-bold text-white shadow-2xl transition hover:bg-green-600 lg:inline-flex"
+>
+  WhatsApp Booking
+</a>
 
       <button
         type="button"
