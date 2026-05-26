@@ -142,15 +142,7 @@ Please confirm availability.`;
       <a href="#contact" className="transition hover:text-[#B8892D]">Contact</a>
     </nav>
 
-    <a
-  href={createRoomWhatsAppLink(room)}
-  target="_blank"
-  rel="noopener noreferrer"
-  className="mt-6 block rounded-full bg-[#0B1F3A] px-5 py-3 text-center text-sm font-bold text-white transition hover:bg-[#132f55]"
->
-  Book Room
-</a>
-
+    
     <div className="flex items-center gap-3">
       
 
