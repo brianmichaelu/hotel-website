@@ -240,56 +240,76 @@ Message: ${bookingForm.message}
 </section>
 
       {/* ROOMS */}
-      <section id="rooms"  className="reveal mx-auto max-w-7xl px-5 py-16 md:py-24">
-        <div className="mx-auto max-w-7xl px-5">
-          <div className="mb-10 max-w-2xl">
-            <p className="text-sm font-bold uppercase tracking-[0.25em] text-[#B8892D]">Rooms</p>
-            <h2 className="mt-3 text-3xl font-bold md:text-4xl">Choose a room that fits your stay.</h2>
-            <p className="mt-4 leading-7 text-slate-600">
-              Simple, clean, and comfortable rooms for business, family, and weekend guests.
+      
+<section
+  id="rooms"
+  className="reveal scroll-mt-40 mx-auto max-w-7xl px-5 pt-8 pb-16 md:pt-10 md:pb-20"
+>
+  <div>
+    <div className="mb-10 max-w-2xl">
+      <p className="text-sm font-bold uppercase tracking-[0.25em] text-[#B8892D]">
+        Rooms
+      </p>
+
+      <h2 className="mt-3 text-3xl font-bold leading-tight text-[#0B1F3A] md:text-4xl">
+        Choose a room that fits your stay.
+      </h2>
+
+      <p className="mt-4 leading-7 text-slate-600">
+        Simple, clean, and comfortable rooms for business, family, and weekend guests.
+      </p>
+    </div>
+
+    <div className="grid gap-6 md:grid-cols-3">
+      {rooms.map((room) => (
+        <article
+          key={room.name}
+          className="reveal overflow-hidden rounded-3xl bg-white shadow-xl ring-1 ring-black/5 transition duration-300 hover:-translate-y-2 hover:shadow-2xl"
+        >
+          <Image
+            src={room.image}
+            alt={room.name}
+            width={800}
+            height={600}
+            className="h-56 w-full object-cover"
+          />
+
+          <div className="p-6">
+            <div className="flex items-start justify-between gap-4">
+              <h3 className="text-xl font-bold text-[#0B1F3A]">
+                {room.name}
+              </h3>
+
+              <p className="text-right text-sm font-bold text-[#B8892D]">
+                {room.price}
+              </p>
+            </div>
+
+            <p className="mt-3 leading-7 text-slate-600">
+              {room.description}
             </p>
-          </div>
 
-          <div className="grid gap-6 md:grid-cols-3">
-            {rooms.map((room) => (
-              <article key={room.name} className="reveal overflow-hidden rounded-3xl bg-white shadow-xl ring-1 ring-black/5 transition duration-300 hover:-translate-y-2 hover:shadow-2xl"
-              >
-                 <Image
-                    src={room.image}
-                    alt={room.name}
-                    width={800}
-                    height={600}
-                  className="h-56 w-full object-cover"
-              
-                />
-                <div className="p-6">
-                  <div className="flex items-start justify-between gap-4">
-                    <h3 className="text-xl font-bold">{room.name}</h3>
-                    <p className="text-right text-sm font-bold text-[#B8892D]">{room.price}</p>
-                  </div>
-                  <p className="mt-3 leading-7 text-slate-600">{room.description}</p>
-                  <ul className="mt-5 space-y-2 text-sm text-slate-700">
-                    {room.amenities.map((item) => (
-                      <li key={item} className="flex gap-2">
-                        <span className="text-[#B8892D]">✓</span>
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                  <a
-                    href={whatsappLink}
-                    className="mt-6 block rounded-full bg-[#0B1F3A] px-5 py-3 text-center text-sm font-bold text-white transition hover:bg-[#132f55]"
-                  >
-                    Book Room
-                  </a>
-                </div>
-              </article>
-            ))}
-             
-          </div>
-        </div>
-      </section>
+            <ul className="mt-5 space-y-2 text-sm text-slate-700">
+              {room.amenities.map((item) => (
+                <li key={item} className="flex gap-2">
+                  <span className="text-[#B8892D]">✓</span>
+                  {item}
+                </li>
+              ))}
+            </ul>
 
+            <a
+              href={whatsappLink}
+              className="mt-6 block rounded-full bg-[#0B1F3A] px-5 py-3 text-center text-sm font-bold text-white transition hover:bg-[#132f55]"
+            >
+              Book Room
+            </a>
+          </div>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
       {/* AMENITIES */}
       <section id="amenities" className="reveal mx-auto max-w-7xl px-5 py-16 md:py-24">
         <div className="mb-10 max-w-2xl">
