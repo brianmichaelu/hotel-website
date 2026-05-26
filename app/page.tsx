@@ -168,7 +168,7 @@ Message: ${bookingForm.message}
   {/* HERO */}
       
 <section id="home" className="bg-white">
-  <div className="mx-auto grid max-w-7xl gap-10 px-5 pt-6 pb-14 md:grid-cols-2 md:items-center md:pt-10 md:pb-20 lg:pt-12 lg:pb-24">
+  <div className="mx-auto grid max-w-7xl gap-10 px-5 pt-6 pb-14 md:grid-cols-2 md:items-center md:pt-10 md:pb-20 lg:pt-14 lg:pb-24">
     <div>
       <p className="mb-4 inline-flex rounded-full bg-[#FAF7F0] px-4 py-2 text-sm font-semibold text-[#B8892D]">
         Local comfort near Bagamoyo Road
