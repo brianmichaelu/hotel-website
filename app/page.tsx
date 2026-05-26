@@ -410,7 +410,10 @@ Message: ${bookingForm.message}
       </section>
 
       {/* CONTACT */}
-      <section id="contact" className="reveal mx-auto max-w-7xl px-5 py-16 md:py-24">
+      <section
+  id="contact"
+  className="reveal scroll-mt-40 mx-auto max-w-7xl px-5 pt-10 pb-16 md:pt-12 md:pb-20"
+>
         <div className="grid gap-8 lg:grid-cols-2">
           <div>
             <p className="text-sm font-bold uppercase tracking-[0.25em] text-[#B8892D]">Contact & booking</p>
