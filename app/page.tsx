@@ -214,19 +214,30 @@ Message: ${bookingForm.message}
 </section>
 
       {/* ABOUT */}
-      <section id="about" className="reveal mx-auto max-w-7xl px-5 py-16 md:py-24">
-        <div className="grid gap-8 md:grid-cols-[1fr_1.3fr] md:items-center">
-          <div>
-            <p className="text-sm font-bold uppercase tracking-[0.25em] text-[#B8892D]">About us</p>
-            <h2 className="mt-3 text-3xl font-bold md:text-4xl">A calm local hotel for easy stays in Tegeta.</h2>
-          </div>
-          <p className="text-base leading-8 text-slate-700 md:text-lg">
-            {hotelName} serves travelers, business guests, families, and weekend visitors looking
-            for a clean, convenient, and affordable stay in Tegeta. Our location offers a peaceful
-            environment with quick access to Mbezi Beach, Bagamoyo Road, White Sands area, and central Dar es Salaam.
-          </p>
-        </div>
-      </section>
+      
+<section
+  id="about"
+  className="reveal scroll-mt-40 mx-auto max-w-7xl px-5 pt-12 pb-16 md:pt-16 md:pb-20"
+>
+  <div className="grid gap-8 md:grid-cols-[1fr_1.3fr] md:items-center">
+    <div>
+      <p className="text-sm font-bold uppercase tracking-[0.25em] text-[#B8892D]">
+        About us
+      </p>
+
+      <h2 className="mt-3 max-w-xl text-3xl font-bold leading-tight text-[#0B1F3A] md:text-4xl">
+        A calm local hotel for easy stays in Tegeta.
+      </h2>
+    </div>
+
+    <p className="text-base leading-8 text-slate-700 md:text-lg">
+      {hotelName} serves travelers, business guests, families, and weekend visitors
+      looking for a clean, convenient, and affordable stay in Tegeta. Our location
+      offers a peaceful environment with quick access to Mbezi Beach, Bagamoyo Road,
+      White Sands area, and central Dar es Salaam.
+    </p>
+  </div>
+</section>
 
       {/* ROOMS */}
       <section id="rooms"  className="reveal mx-auto max-w-7xl px-5 py-16 md:py-24">
