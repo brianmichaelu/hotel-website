@@ -217,7 +217,7 @@ Message: ${bookingForm.message}
       
 <section
   id="about"
-  className="reveal scroll-mt-40 mx-auto max-w-7xl px-5 pt-12 pb-10 md:pt-16 md:pb-12"
+  className="reveal scroll-mt-40 mx-auto max-w-7xl px-5 pt-10 pb-4 md:pt-12 md:pb-4"
 >
   <div className="grid gap-8 md:grid-cols-[1fr_1.3fr] md:items-center">
     <div>
@@ -243,7 +243,7 @@ Message: ${bookingForm.message}
       
 <section
   id="rooms"
-  className="reveal scroll-mt-40 mx-auto max-w-7xl px-5 pt-8 pb-16 md:pt-10 md:pb-20"
+  className="reveal scroll-mt-40 mx-auto max-w-7xl px-5 pt-4 pb-16 md:pt-6 md:pb-20"
 >
   <div>
     <div className="mb-10 max-w-2xl">
