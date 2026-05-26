@@ -314,7 +314,7 @@ Message: ${bookingForm.message}
       {/* AMENITIES */}
 <section
   id="amenities"
-  className="reveal scroll-mt-40 mx-auto max-w-7xl px-5 pt-10 pb-16 md:pt-12 md:pb-20"
+  className="reveal scroll-mt-36 mx-auto max-w-7xl px-5 pt-8 pb-16 md:pt-10 md:pb-20"
 >
   <div className="mb-10 max-w-2xl">
     <p className="text-sm font-bold uppercase tracking-[0.25em] text-[#B8892D]">
